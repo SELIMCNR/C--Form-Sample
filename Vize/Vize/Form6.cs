@@ -25,24 +25,23 @@ namespace Vize
      
             sayi1 = Convert.ToInt32(textBox1.Text);
             sayi2 = Convert.ToInt32(textBox2.Text);
-            for(int i = sayi1; sayi1<sayi2; i++)
+            for( sayi1 = Convert.ToInt32(textBox1.Text); sayi1<sayi2; sayi1++)
             {
-                if(i%2 == 0)
+                if(sayi1 %2 == 0)
                 {
-                    listBox1.Items.Add(i);
-                    çifttoplam =+ i;
+                    listBox1.Items.Add(sayi1);
+                    çifttoplam =+ sayi1;
                     
                 }
-                else if(i%2 == 1)
+                else if(sayi1 %2 == 1)
                 {
-                    listBox2.Items.Add(i);
-                    tektoplam =+ i;
+                   listBox2.Items.Add(sayi1);
+                    tektoplam =+ sayi1;
                 }
                
             }
             sonuc = tektoplam + çifttoplam;
             textBox3.Text = sonuc.ToString();
-
         }
     }
 }
